@@ -1,0 +1,6 @@
+.vscode
+/node_modules/
+/lib/
+/test/
+custom-elements.json
+yarn-error.log
