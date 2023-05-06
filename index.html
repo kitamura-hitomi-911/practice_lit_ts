@@ -7,9 +7,19 @@
   </head>
   <body>
     <div class="l-wrapper">
-      あああ
-      <ss-cmn-table></ss-cmn-table>
+      <ss-cmn-table id="list"></ss-cmn-table>
       <ss-test></ss-test>
     </div>
+    <script>
+      const listElm = document.getElementById("list");
+      listElm.fields = [
+        { key: "id", label: "ID" },
+        { key: "campaign_name", label: "キャンペーン名" },
+      ];
+      listElm.items = [
+        { id: 1, campaign_name: "プレゼントキャンペーン" },
+        { id: 2, campaign_name: "Twitterキャンペーン" },
+      ];
+    </script>
   </body>
 </html>
