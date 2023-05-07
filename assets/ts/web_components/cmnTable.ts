@@ -19,6 +19,7 @@ export class CmnTable extends LitElement {
   // Render the UI as a function of component state
   render() {
     return html`
+      <ss-test></ss-test>
       <table>
         <thead>
           <tr>

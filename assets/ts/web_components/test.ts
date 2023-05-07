@@ -1,6 +1,7 @@
 import { LitElement, css, html } from "lit";
-import { property } from "lit/decorators.js";
+import { customElement, property } from "lit/decorators.js";
 
+@customElement("ss-test")
 export class SsTest extends LitElement {
   static properties = {
     name: { type: String },

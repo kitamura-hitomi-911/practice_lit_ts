@@ -1,15 +1,18 @@
 {
   "scripts": {
     "build": "webpack",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "analyze": "cem analyze --litelement --globs \"assets/ts/web_components/*.ts\""
   },
   "dependencies": {
     "lit": "^2.7.4"
   },
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.8.1",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
     "webpack": "^5.82.0",
     "webpack-cli": "^5.0.2"
-  }
+  },
+  "customElements": "custom-elements.json"
 }
