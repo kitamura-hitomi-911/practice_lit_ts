@@ -1,3 +1,3 @@
-import "./web_components/table";
-import "./web_components/btn";
-import "./web_components/icon";
+import "@assets/ts/web_components/table";
+import "@assets/ts/web_components/btn";
+import "@assets/ts/web_components/icon";

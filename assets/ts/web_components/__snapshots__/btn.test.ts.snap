@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`btn 1`] = `
+<ss-btn>
+  ボタンラベル
+</ss-btn>
+`;

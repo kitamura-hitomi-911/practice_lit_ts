@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   // モード値を production に設定すると最適化された状態で、
   // development に設定するとソースマップ有効でJSファイルが出力される
@@ -29,5 +31,9 @@ module.exports = {
   resolve: {
     // 拡張子を配列で指定
     extensions: [".ts", ".js"],
+    alias: {
+      "@assets": path.resolve(__dirname, "./assets"),
+      "@src": path.resolve(__dirname, "./src"),
+    },
   },
 };
