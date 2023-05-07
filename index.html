@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <title>Lit NPM利用</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <script type="module" src="./src/js/main.js"></script>
   </head>
   <body>
     <div class="l-wrapper">
-      <ss-cmn-table id="list"></ss-cmn-table>
+      <ss-table id="list"></ss-table>
+      <ss-btn icon="check_circle" onClick="onClickBtn(this);return false"
+        >ボタンラベル</ss-btn
+      >
       <ss-test></ss-test>
     </div>
     <script>
+      function onClickBtn(self) {
+        console.log(self);
+      }
       const listElm = document.getElementById("list");
       listElm.fields = [
         { key: "id", label: "ID" },

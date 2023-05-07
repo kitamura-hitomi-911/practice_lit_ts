@@ -1,8 +1,8 @@
 import { LitElement, css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-@customElement("ss-cmn-table")
-export class CmnTable extends LitElement {
+@customElement("ss-table")
+export class Table extends LitElement {
   // Define scoped styles right with your component, in plain CSS
   static styles = css`
     :host {
